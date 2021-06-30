@@ -13,21 +13,20 @@
 		
 		<%
 		String flag = (String) session.getAttribute("flag");
-		//out.print(flag);
+		out.print(flag);
 		
 		if(flag != null){
-			if(flag.equals("ok")){
-		%>		
+			if(flag.equals("ok")){%>	
+				
 			<a href="./logout.jsp"><img src="../images/login.JPG"></a>
-		<% 
-			}
+			
+		<% }
+		}else{%>
 		
-		}else{
-		%>
-			<a href="./login.jsp"><img src="../images/logout.JPG"></a>		
-		<%	
-		}
-		%>
+			<a href="./login.jsp"><img src="../images/logout.JPG"></a>	
+				
+		<%}%>
+		
 		
 			
 		
